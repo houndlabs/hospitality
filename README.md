@@ -35,6 +35,14 @@ hospitality.init({
 });
 ```
 
+By default, users are tracked on a per-domain basis. If you'd like to change that behavior, you can via:
+
+```javascript
+hospitality.init({
+    domain: '.mydomain.com'
+});
+```
+
 ## Testing
 
 1. Startup a web server from the root directory:

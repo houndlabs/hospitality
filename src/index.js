@@ -50,7 +50,7 @@
       "; path='/'; domain=." +
       window.location.hostname.split('.').slice(-2).join('.'));
     document.cookie = default_settings.unique + '=' + now() +
-      "; path='/'; domain=" + window.location.hostname;
+      "; path='/'; domain=" + default_settings.domain;
   };
 
   var default_settings = {
@@ -61,7 +61,8 @@
     },
     // No matter how many times someone visits, they need to wait Xms
     // until they're "returning". The default is 1hr.
-    wait: 1000 * 60 * 60
+    wait: 1000 * 60 * 60,
+    domain: window.location.hostname
   };
 
   window.hospitality.init = function(settings) {
