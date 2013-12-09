@@ -1,6 +1,6 @@
 (function() {
 
-  window.returning = {};
+  window.hospitality = {};
 
   // - cross browser each/extend implementation
 
@@ -65,7 +65,7 @@
     wait: 1000 * 60 * 60
   };
 
-  window.returning.init = function(settings) {
+  window.hospitality.init = function(settings) {
     extend(default_settings, settings);
 
     var last_visit = get_cookie();
