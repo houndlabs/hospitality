@@ -50,8 +50,7 @@
       "; path='/'; domain=." +
       window.location.hostname.split('.').slice(-2).join('.'));
     document.cookie = default_settings.unique + '=' + now() +
-      "; path='/'; domain=." +
-      window.location.hostname.split('.').slice(-2).join('.');
+      "; path='/'; domain=" + window.location.hostname;
   };
 
   var default_settings = {
