@@ -20,7 +20,7 @@
       You've visited this site before.
     </div>
 
-    <script src="/src/returning.js"></script>
+    <script src="/src/index.js"></script>
     <script>
 
       var show_message = function(id) {
@@ -29,7 +29,7 @@
           elem.getAttribute('class').split(' ').slice(0,-1).join(' '));
       };
 
-      returning.init({
+      hospitality.init({
         visit: {
           new: function() { show_message('new-user'); },
           return: function() { show_message('return-user'); }
