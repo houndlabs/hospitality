@@ -8,7 +8,7 @@ Every visitor to your website is unique. You should treat them that way! Hospita
 
 It is trivial to implement your own types like `free user` or `paid user`.
 
-# Implementation
+## Implementation
 
 Put this at the bottom of your page:
 
@@ -25,7 +25,7 @@ Put this at the bottom of your page:
 </script>
 ```
 
-## Config
+### Config
 
 A new vs. return visit is more than just refreshing the page. To differentiate a return visit, this waits an hour after the first visit to treat the visitor as a return visitor. You can modify the wait via.
 
@@ -35,7 +35,7 @@ hospitality.init({
 });
 ```
 
-# Testing
+## Testing
 
 1. Startup a web server from the root directory:
 
