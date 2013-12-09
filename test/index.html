@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />
+  </head>
+  <body class="container">
+
+    <div class="alert alert-info alert-dismissable hide" id="new-user">
+      You've never visited this site before.
+    </div>
+
+    <div class="alert alert-info alert-dismissable hide" id="return-user">
+      You've visited this site before.
+    </div>
+
+    <script src="/src/returning.js"></script>
+    <script>
+
+      var show_message = function(id) {
+        var elem = document.getElementById(id);
+        elem.setAttribute('class',
+          elem.getAttribute('class').split(' ').slice(0,-1).join(' '));
+      };
+
+      returning.init({
+        visit: {
+          new: function() { show_message('new-user'); },
+          return: function() { show_message('return-user'); }
+        },
+        wait: 100
+      });
+
+    </script>
+  </body>
+</html>
