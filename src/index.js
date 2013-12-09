@@ -13,7 +13,8 @@
         if (iterator.call(context, obj[i], i, obj) === breaker) return;
       }
     } else {
-      var keys = _.keys(obj);
+      var keys = [];
+      for (var key in obj) if (_.has(obj, key)) keys.push(key);
       for (var i = 0, length = keys.length; i < length; i++) {
         if (iterator.call(context, obj[keys[i]], keys[i], obj) === breaker) return;
       }
