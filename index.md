@@ -2,4 +2,4 @@
 layout: index
 ---
 
-{% include readme.md %}
+{% include README.md %}
