@@ -12,7 +12,17 @@ It is trivial to implement your own types like `free user` or `paid user`.
 
 Put this at the bottom of your page:
 
-{% gist 7883774 %}
+```html
+<script src="/src/hospitality.js"></script>
+<script>
+  hospitality.init({
+    visit: {
+      new: function() { alert('new-user'); },
+      return: function() { alert('return-user'); }
+    }
+  });
+</script>
+```
 
 ### Config
 
@@ -36,8 +46,8 @@ hospitality.init({
 
 1. Startup a web server from the root directory:
 
-```bash
-python -m SimpleHTTPServer
-```
+    ```bash
+    python -m SimpleHTTPServer
+    ```
 
 2. Go to the [test page](http://lvh.me:8080/test).
