@@ -12,18 +12,7 @@ It is trivial to implement your own types like `free user` or `paid user`.
 
 Put this at the bottom of your page:
 
-```html
-
-<script src="/src/hospitality.js"></script>
-<script>
-  hospitality.init({
-    visit: {
-      new: function() { alert('new-user'); },
-      return: function() { alert('return-user'); }
-    }
-  });
-</script>
-```
+{% gist 7883774 %}
 
 ### Config
 
