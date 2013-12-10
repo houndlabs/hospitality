@@ -8,6 +8,8 @@ Every visitor to your website is unique. You should treat them that way! Hospita
 
 It is trivial to implement your own types like `free user` or `paid user`.
 
+For a demo, check out the [project site](http://hospitality.hound.io)
+
 ## Implementation
 
 Put this at the bottom of your page:
